@@ -1,0 +1,5 @@
+set -g status-right '#[fg=green] #(basic-cpu-and-memory.tmux)'
+set -g status-left '#[fg=blue]#h'
+set-window-option -g window-status-current-bg black 
+set-window-option -g window-status-current-format '#[fg=yellow][#I]#[fg=red] #W'
+set-window-option -g window-status-format '#[fg=yellow][#I]#[fg=white] #W'
