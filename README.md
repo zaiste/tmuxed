@@ -30,3 +30,4 @@ Requirements
  * Python
  * [psutil](http://code.google.com/p/psutil/)
  * Test
+ * [Patched font](https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts) for wemux theme
