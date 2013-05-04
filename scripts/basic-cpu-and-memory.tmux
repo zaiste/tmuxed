@@ -23,12 +23,13 @@ def get_dashes(perc):
 
 
 def info():
-    phymem = psutil.phymem_usage()
+    mem = psutil.virtual_memory()
+    memused = mem.used - mem.cached
 
     cpu_dashes, cpu_empty_dashes = get_dashes(psutil.cpu_percent(interval=0.1))
     line = "%s/%sMB [%s%s] %s%%" % (
-        str(int(phymem.used / 1024 / 1024)),
-        str(int(phymem.total / 1024 / 1024)),
+        str(int(memused / 1024 / 1024)),
+        str(int(mem.total / 1024 / 1024)),
         cpu_dashes, cpu_empty_dashes,
         psutil.cpu_percent(interval=0.1),
     )
