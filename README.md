@@ -3,7 +3,7 @@
 </p>
 
 
-<h1 align="center">Tmuxified</h1>
+<h1 align="center">tmux'ed</h1>
 
 <p align="center">
   <b>A simple configuration for tmux.</b>
@@ -16,10 +16,9 @@
 
 ```bash
 cd
-git clone git://github.com/zaiste/tmuxified.git
+git clone https://github.com/zaiste/tmuxed.git .tmux
 
-# Link tmux.conf
-ln -sfn ~/tmuxified ~/.tmux
-ln -sfn ~/tmuxified/tmux.conf ~/.tmux.conf
+# link tmux.conf
+ln -sfn ~/.tmux/tmux.conf ~/.tmux.conf
 ```
 
