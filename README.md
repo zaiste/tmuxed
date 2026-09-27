@@ -14,6 +14,8 @@
 
 ## Installation  
 
+Requires tmux 3.7 or newer.
+
 ```bash
 cd
 git clone https://github.com/zaiste/tmuxed.git .tmux
